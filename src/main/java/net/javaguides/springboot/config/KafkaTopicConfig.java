@@ -5,13 +5,20 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.config.TopicBuilder;
 
-import static net.javaguides.springboot.SpringbootKafkaTutorialApplication.TOPIC;
-
 @Configuration
 public class KafkaTopicConfig {
+
+    public final static String TOPIC = "javaguides-string";
+    public final static String TOPIC_JSON = "javaguides_json";
 
     @Bean
     public NewTopic javaguidesTopic() {
         return TopicBuilder.name(TOPIC).partitions(1).build();
     }
+
+    @Bean
+    public NewTopic javaguidesJsonTopic() {
+        return TopicBuilder.name(TOPIC_JSON).partitions(1).build();
+    }
+
 }

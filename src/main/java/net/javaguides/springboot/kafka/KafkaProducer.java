@@ -2,11 +2,10 @@ package net.javaguides.springboot.kafka;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
-import static net.javaguides.springboot.SpringbootKafkaTutorialApplication.TOPIC;
+import static net.javaguides.springboot.config.KafkaTopicConfig.TOPIC;
 
 @Service
 public class KafkaProducer {

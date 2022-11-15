@@ -5,7 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 
-import static net.javaguides.springboot.SpringbootKafkaTutorialApplication.TOPIC;
+import static net.javaguides.springboot.config.KafkaTopicConfig.TOPIC;
 
 @Service
 public class KafkaConsumer {
